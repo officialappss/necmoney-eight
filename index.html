@@ -1,0 +1,272 @@
+<!DOCTYPE html><html lang="bn"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nec Money - প্রবাসীদের বিশ্বস্ত অ্যাপ</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Hind Siliguri"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            light: '#ecfdf5',   /* Very Light Green (Backgrounds) */
+                            primary: '#10b981', /* Bright Green (Buttons/Accents) */
+                            dark: '#064e3b',    /* Dark Green (Text/Footer) */
+                            hover: '#059669'    /* Button Hover */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { scroll-behavior: smooth; }
+        
+        /* Phone Mockup Styling */
+        .phone-frame {
+            border: 10px solid #111;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            background: #000;
+        }
+
+        /* Custom Button Gradient */
+        .btn-gradient {
+            background: linear-gradient(135deg, #059669 0%, #047857 100%);
+            transition: transform 0.2s;
+        }
+        .btn-gradient:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
+        }
+
+        /* Video Container for Responsive YouTube */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-white">
+
+    <nav class="bg-white/90 backdrop-blur-md fixed w-full z-50 top-0 border-b border-gray-100">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-brand-dark flex items-center gap-2">
+                <i class="fas fa-paper-plane text-brand-primary"></i> Nec Money
+            </div>
+            <a href="#download" class="text-brand-dark font-semibold hover:text-brand-primary transition">
+                অ্যাপ নামান <i class="fas fa-download ml-1"></i>
+            </a>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-20 bg-gradient-to-b from-brand-light to-white overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                
+                <div class="lg:w-1/2 text-center lg:text-left z-10">
+                    <div class="inline-block bg-green-100 text-brand-dark px-4 py-1 rounded-full text-sm font-bold mb-6">
+                        🇧🇩 প্রবাসীদের ১ নম্বর পছন্দ
+                    </div>
+                    <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+                        আপনার কষ্টার্জিত টাকা <br>
+                        <span class="text-brand-primary">নিরাপদে দেশে পাঠান</span>
+                    </h1>
+                    <p class="text-gray-600 text-lg mb-8 max-w-lg mx-auto lg:mx-0">
+                        সৌদি আরব, দুবাই, মালয়েশিয়া বা ইউরোপ - যেকোনো দেশ থেকে মুহূর্তেই টাকা পাঠান বাংলাদেশে। সেরা রেট, কোনো গোপন চার্জ নেই।
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#download" class="btn-gradient text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center gap-3 w-full sm:w-auto shadow-lg">
+                            <i class="fab fa-android text-2xl"></i>
+                            <span>অ্যাপ ডাউনলোড করুন</span>
+                        </a>
+                    </div>
+                    
+                    <div class="mt-8 flex justify-center lg:justify-start gap-6 text-gray-500 font-medium text-sm">
+                        <span class="flex items-center gap-1"><i class="fas fa-check-circle text-brand-primary"></i> ১০০% নিরাপদ</span>
+                        <span class="flex items-center gap-1"><i class="fas fa-check-circle text-brand-primary"></i> বাংলাদেশ ব্যাংক অনুমোদিত</span>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2 flex justify-center relative">
+                    <div class="absolute top-10 right-10 w-64 h-64 bg-green-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-pulse"></div>
+                    <div class="absolute bottom-10 left-10 w-64 h-64 bg-emerald-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50"></div>
+                    
+                    <div class="phone-frame w-72 h-[580px] z-10 bg-white">
+                        <img src="images/screenshort.jpg" class="w-full h-full object-cover">
+                        <div class="absolute bottom-12 left-4 right-4 bg-white/90 backdrop-blur p-4 rounded-xl shadow-lg border border-green-100">
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <p class="text-xs text-gray-500"> প্রাপক</p>
+                                    <p class="font-bold text-gray-800">মা ❤️</p>
+                                </div>
+                                <div class="text-right">
+                                    <p class="text-xs text-gray-500">টাকা জমা হয়েছে</p>
+                                    <p class="font-bold text-brand-primary">৫০,০০০.০০ ৳</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 container mx-auto px-6 -mt-10 relative z-20">
+        <div class="bg-white rounded-2xl shadow-xl border border-green-100 overflow-hidden max-w-4xl mx-auto">
+            <div class="bg-brand-dark text-white p-4 flex justify-between items-center">
+                <h3 class="font-bold text-lg">আজকের টাকার রেট</h3>
+                <span class="text-xs bg-brand-primary px-2 py-1 rounded text-white animate-pulse">LIVE ●</span>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left">
+                    <thead class="bg-green-50 text-gray-600 text-sm">
+                        <tr>
+                            <th class="p-4 font-semibold">দেশ</th>
+                            <th class="p-4 font-semibold">মুদ্রা</th>
+                            <th class="p-4 font-semibold text-right">রেট (টাকা)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        <tr class="hover:bg-green-50/50">
+                            <td class="p-4 font-medium flex items-center gap-3">
+                                <img src="images/sa.png" width="24" alt="KSA"> সৌদি আরব
+                            </td>
+                            <td class="p-4 text-gray-500">1 SAR</td>
+                            <td class="p-4 text-right font-bold text-brand-dark">৩৪.৮৫ ৳</td>
+                        </tr>
+                        <tr class="hover:bg-green-50/50">
+                            <td class="p-4 font-medium flex items-center gap-3">
+                                <img src="images/ae.png" width="24" alt="UAE"> দুবাই (UAE)
+                            </td>
+                            <td class="p-4 text-gray-500">1 AED</td>
+                            <td class="p-4 text-right font-bold text-brand-dark">৩৩.৫০ ৳</td>
+                        </tr>
+                        <tr class="hover:bg-green-50/50">
+                            <td class="p-4 font-medium flex items-center gap-3">
+                                <img src="images/my.png" width="24" alt="Malaysia"> মালয়েশিয়া
+                            </td>
+                            <td class="p-4 text-gray-500">1 MYR</td>
+                            <td class="p-4 text-right font-bold text-brand-dark">২৮.৬০ ৳</td>
+                        </tr>
+                        <tr class="hover:bg-green-50/50">
+                            <td class="p-4 font-medium flex items-center gap-3">
+                                <img src="images/us.png" width="24" alt="USA"> আমেরিকা
+                            </td>
+                            <td class="p-4 text-gray-500">1 USD</td>
+                            <td class="p-4 text-right font-bold text-brand-dark">১২৫.৫০ ৳</td>
+                        </tr>
+                        <tr class="hover:bg-green-50/50">
+                            <td class="p-4 font-medium flex items-center gap-3">
+                                <img src="images/gb.png" width="24" alt="UK"> যুক্তরাজ্য
+                            </td>
+                            <td class="p-4 text-gray-500">1 GBP</td>
+                            <td class="p-4 text-right font-bold text-brand-dark">১৩০.১০ ৳</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="p-3 bg-gray-50 text-center text-xs text-gray-500">
+                * রেট পরিবর্তনশীল। অ্যাপে লেটেস্ট রেট দেখুন।
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-brand-light">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-brand-dark mb-4">আমাদের বিশেষ সুবিধা</h2>
+                <div class="h-1 w-20 bg-brand-primary mx-auto rounded"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-green-100">
+                    <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center text-brand-primary text-2xl mb-4">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">দ্রুত টাকা পৌঁছাবে</h3>
+                    <p class="text-gray-600">টাকা পাঠানোর মাত্র ২ মিনিটের মধ্যে দেশে আপনার পরিবার টাকা রিসিভ করবে।</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-green-100">
+                    <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center text-brand-primary text-2xl mb-4">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">খরচ সবচেয়ে কম</h3>
+                    <p class="text-gray-600">আমরা দিচ্ছি সবচেয়ে কম ফি এবং সেরা এক্সচেঞ্জ রেট। আপনার কষ্টের টাকার সঠিক মূল্য।</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-green-100">
+                    <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center text-brand-primary text-2xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">সম্পূর্ণ নিরাপদ</h3>
+                    <p class="text-gray-600">আপনার লেনদেনের নিরাপত্তা আমাদের প্রধান দায়িত্ব। আমরা লেটেস্ট সিকিউরিটি ব্যবহার করি।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="download" class="py-24 bg-brand-dark text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 24px 24px;"></div>
+        
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">আজই অ্যাপ ডাউনলোড করুন</h2>
+            <p class="text-green-100 text-xl mb-10 max-w-xl mx-auto">
+                আর লাইনে দাঁড়ানো নয়। এখন ঘরে বসেই আপনার মোবাইলে টাকা পাঠান নিরাপদে।
+            </p>
+            
+            <div class="flex flex-col items-center">
+                <a href="app.apk" class="bg-white text-brand-dark hover:bg-gray-100 transition px-10 py-5 rounded-2xl font-bold text-xl flex items-center gap-4 shadow-xl transform hover:scale-105 duration-300">
+                    <i class="fab fa-android text-4xl text-green-600"></i>
+                    <div class="text-left">
+                        <div class="text-sm text-gray-500 font-medium">অ্যান্ড্রয়েড অ্যাপ</div>
+                        <div class="text-2xl leading-none">Download App</div>
+                    </div>
+                </a>
+                
+                <p class="mt-8 text-sm text-green-200 opacity-80">
+                    ভার্সন ২.০ | সাইজ: ৬.৮৯ মেগাবাইট | সম্পূর্ণ ফ্রি
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-dark border-t border-green-900 text-green-100 py-10">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="text-xl font-bold text-white">Nec Money</div>
+            <div class="text-sm">
+                © ২০২৬  Nec Money Inc. সর্বস্বত্ব সংরক্ষিত।
+            </div>
+            <div class="flex gap-6 text-sm">
+                <a href="#" class="hover:text-white transition">শর্তাবলী</a>
+                <a href="#" class="hover:text-white transition">প্রাইভেসি পলিসি</a>
+                <a href="#" class="hover:text-white transition">হেল্পলাইন</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body></html>
